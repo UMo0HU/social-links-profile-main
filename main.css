@@ -1,0 +1,96 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);    
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+}
+
+.outer-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-container {
+    background-color: var(--Dark-Grey);
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-container img {
+    width: 70px;
+    border-radius: 50%;
+    margin: 35px 0 25px;
+}
+
+.inner-container h2 + p {
+    color: var(--Green);
+    margin: 12px 0;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.inner-container p:nth-child(4) {
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin: 18px 0;
+}
+
+.inner-container ul {
+    list-style-type: none;
+}
+
+.inner-container ul li {
+    background-color: var(--Grey);
+    color: var(--White);
+    width: 320px;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.inner-container a:link {
+    text-decoration: none;
+}
+
+a:hover li {
+    scale: 1.025;
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+
+.attribution { 
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
